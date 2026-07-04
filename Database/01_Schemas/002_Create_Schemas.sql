@@ -9,6 +9,9 @@ Dependencies: 001_Create_Database.sql
 Execution Order: 002
 ------------------------------------------------------*/
 
+USE HRManagementSystem;
+GO
+
 IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'hr')
 EXEC ('CREATE SCHEMA hr')
 GO
@@ -40,3 +43,4 @@ GO
 IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE NAME = 'reporting')
 EXEC ('CREATE SCHEMA reporting')
 GO
+
