@@ -12,3 +12,6 @@
 #os
 .DS_Store
 Thumbs.db
+
+#test
+/test.sql

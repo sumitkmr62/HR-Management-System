@@ -30,7 +30,6 @@ CREATE TABLE hr.Department
   CreatedDate     DATETIME2(0)      NOT NULL
     CONSTRAINT DF_Department_CreatedDate DEFAULT(SYSDATETIME()),
   ModifiedDate    DATETIME2(0)      NULL
-    CONSTRAINT DF_Department_ModifiedDate DEFAULT(SYSDATETIME()),
 
   CONSTRAINT PK_Department PRIMARY KEY CLUSTERED(DepartmentID),
   CONSTRAINT UQ_Department_DepartmentCode UNIQUE(DepartmentCode),
@@ -66,3 +65,5 @@ VALUES
 ('FIN', 'Finance', 'Accounting and Finance'),
 ('OPS', 'Operations', 'Business operations');
 GO
+
+SELECT * FROM hr.Department;
